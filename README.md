@@ -6,9 +6,7 @@ This repository contains my solutions and projects for the **CS50x 2024** course
 
 - [About the Course](#about-the-course)
 - [Course Structure](#course-structure)
-- [Technologies Used](#technologies-used)
-- [My Solutions](#my-solutions)
-- [How to Use This Repository](#how-to-use-this-repository)
+- [Programming Languages Used](#programming-languages-used)
 - [Acknowledgements](#acknowledgements)
 
 ## About the Course
