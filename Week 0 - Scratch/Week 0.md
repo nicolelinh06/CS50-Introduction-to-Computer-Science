@@ -1,4 +1,4 @@
-# Lecture 0 - Introduction to Computer Science
+# Week 0 - Scratch
 
 ## Welcome!
 Welcome to the course! This class is about more than just computer programming—it's about problem-solving in a way that can be incredibly empowering. The skills you develop here will be applicable to many areas beyond this course and even in your future career. However, be prepared to face a lot of information quickly. The journey will be challenging, but also rewarding. The key is to give yourself the time you need to learn and grow. Remember, everyone learns differently, and it's okay if things seem difficult at first.
