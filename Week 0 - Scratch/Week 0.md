@@ -16,11 +16,11 @@ Welcome to the course! This class is about more than just computer programmingâ€
 Computer programming involves taking some input and producing an output. The process between input and output is crucial and is the focus of this course.
 
 ### Binary System
-- **Binary Digits (Bits)**: Computers use binary (0s and 1s) for all operations. Each bit represents a state (on or off).
+- **Binary Digits (Bits)**: Computers use *binary* (0s and 1s) for all operations. Each *bit* represents a state (*on* or *off*).
 - **Counting with Bits**: 
   - 1 bit can represent 2 values (0 or 1).
   - 3 bits can represent up to 8 values (0 to 7).
-  - 8 bits (byte) usually represent a number. 
+  - 8 bits (known as *byte*) usually represent a number. 
 
 ### ASCII
 - **ASCII (American Standard Code for Information Interchange)**: Maps specific numbers to characters. For example, 'A' is represented by 65 (binary 01000001).
@@ -32,7 +32,7 @@ Computer programming involves taking some input and producing an output. The pro
 
 ## Representation
 - **RGB Color Model**: Colors are represented using combinations of red, green, and blue values.
-- **Images, Videos, Music**: Represented using pixels (RGB values), sequences of images, and MIDI data respectively.
+- **Images, Videos, Music**: Represented using *pixels* (RGB values), sequences of images, and MIDI data respectively.
 
 ## Algorithms
 Algorithms are step-by-step procedures for solving problems. Examples include:
