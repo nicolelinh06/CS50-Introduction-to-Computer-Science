@@ -62,7 +62,7 @@ Pseudocode is a human-readable way of planning out code logic. For example:
 
 - **Functions**: Lines starting with verbs (e.g., pick up, open) represent actions.
 - **Conditionals**: Statements like `if` and `else if` determine the flow based on conditions.
-- **Boolean Expressions**: Conditions that are true or false (e.g., "person is earlier in the book").
+- **Boolean Expressions**: Conditions that are `true` or `false` (e.g., "person is earlier in the book").
 - **Loops**: Statements like "go back to step 3" repeat actions.
 
 ## Artificial Intelligence
