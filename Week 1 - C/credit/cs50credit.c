@@ -1,3 +1,4 @@
+#include <cs50.h>
 #include <stdio.h>
 #include <stdbool.h>
 
@@ -9,11 +10,12 @@ void validate_card_type(int count, int first_two_digits);
 
 int main(void)
 {
-    long long credit; // Use long long for larger values
+    long long credit;
+
+    // Get credit card number from user
     do
     {
-        printf("Number: ");
-        scanf("%lld", &credit); // Read input as long long
+        credit = get_long_long("Number: ");
     }
     while (credit <= 0);
 
