@@ -83,8 +83,7 @@ bool validate_luhn(long long credit)
         credit /= 10;
         num_pos++;
     }
-
-    return total_sum % 10 == 0; // Valid if sum is divisible by 10
+    return (total_sum % 10 == 0); // Valid if sum is divisible by 10
 }
 
 // Function to determine and print the card type
