@@ -1,6 +1,6 @@
+#include <cs50.h>
 #include <stdio.h>
 #include <string.h>
-#include <stdbool.h>  // Include this for bool, true, and false
 
 // Max number of candidates
 #define MAX 9
@@ -8,7 +8,7 @@
 // Candidates have name and vote count
 typedef struct
 {
-    char *name;  // Change string to char* for standard C
+    string name;
     int votes;
 } candidate;
 
@@ -19,10 +19,10 @@ candidate candidates[MAX];
 int candidate_count;
 
 // Function prototypes
-bool vote(char *name);
+bool vote(string name);
 void print_winner(void);
 
-int main(int argc, char *argv[])
+int main(int argc, string argv[])
 {
     // Check for invalid usage
     if (argc < 2)
@@ -44,16 +44,12 @@ int main(int argc, char *argv[])
         candidates[i].votes = 0;
     }
 
-    int voter_count;
-    printf("Number of voters: ");
-    scanf("%d", &voter_count);  // Use scanf to get the number of voters
+    int voter_count = get_int("Number of voters: ");
 
     // Loop over all voters
     for (int i = 0; i < voter_count; i++)
     {
-        char name[100];  // Assuming max name length of 99 characters
-        printf("Vote: ");
-        scanf("%99s", name);  // Use scanf to get the voter's name
+        string name = get_string("Vote: ");
 
         // Check for invalid vote
         if (!vote(name))
@@ -67,7 +63,7 @@ int main(int argc, char *argv[])
 }
 
 // Update vote totals given a new vote
-bool vote(char *name)
+bool vote(string name)
 {
     for (int i = 0; i < candidate_count; i++)
     {
@@ -87,7 +83,7 @@ void print_winner(void)
     int max = 0;
     for (int i = 0; i < candidate_count; i++)
     {
-        if (candidates[i].votes > max)  // Update to only set max when strictly greater
+        if (candidates[i].votes >= max)
         {
             max = candidates[i].votes;
         }
@@ -100,4 +96,5 @@ void print_winner(void)
             printf("%s\n", candidates[i].name);
         }
     }
+    return;
 }
