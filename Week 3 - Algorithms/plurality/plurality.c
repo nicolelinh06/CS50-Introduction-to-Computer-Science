@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include <stdbool.h>  // Include this for bool, true, and false
+#include <stdbool.h>
 
 // Max number of candidates
 #define MAX 9
@@ -8,7 +8,7 @@
 // Candidates have name and vote count
 typedef struct
 {
-    char *name;  // Change string to char* for standard C
+    char *name;  
     int votes;
 } candidate;
 
@@ -46,14 +46,14 @@ int main(int argc, char *argv[])
 
     int voter_count;
     printf("Number of voters: ");
-    scanf("%d", &voter_count);  // Use scanf to get the number of voters
+    scanf("%d", &voter_count); 
 
     // Loop over all voters
     for (int i = 0; i < voter_count; i++)
     {
         char name[100];  // Assuming max name length of 99 characters
         printf("Vote: ");
-        scanf("%99s", name);  // Use scanf to get the voter's name
+        scanf("%99s", name);  
 
         // Check for invalid vote
         if (!vote(name))
